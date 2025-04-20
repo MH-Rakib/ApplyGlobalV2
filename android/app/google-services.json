@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "32290455067",
+    "project_id": "pursue-your-next-degree",
+    "storage_bucket": "pursue-your-next-degree.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32290455067:android:257e22ef4c8fe0bd3482be",
+        "android_client_info": {
+          "package_name": "com.example.pursue_your_next_degree"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOjbLuFM3icesGC6u7gWJaIx5Os_OuMdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
