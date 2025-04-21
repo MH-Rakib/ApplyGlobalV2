@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:pursue_your_next_degree/screens/degree_screen.dart';
 import 'package:pursue_your_next_degree/screens/profile_form_screen.dart';
 import 'package:pursue_your_next_degree/screens/select_country.dart';
 import 'package:pursue_your_next_degree/screens/login_screen.dart';
@@ -264,7 +265,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (_) => SelectCountryScreen()),
+                            builder: (_) => DegreeScreen()),
                       );
                     },
                     child: const Text("Apply Now"),

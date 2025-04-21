@@ -1,27 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:pursue_your_next_degree/models/country.dart';
-import 'package:pursue_your_next_degree/screens/apply.dart';
+import 'apply.dart';
 
 class SelectSubjectScreen extends StatelessWidget {
-  final Country country;
+  final String degree;
+  final String countryName;
+  final List<String> subjects;
 
-  SelectSubjectScreen({required this.country});
+  SelectSubjectScreen({required this.degree, required this.countryName, required this.subjects});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Select Subject")),
       body: ListView.builder(
-        itemCount: country.subjects.length,
+        itemCount: subjects.length,
         itemBuilder: (context, index) {
           return ListTile(
-            title: Text(country.subjects[index]),
+            title: Text(subjects[index]),
             onTap: () {
-              // Redirect to Apply screen
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ApplyScreen(subject: country.subjects[index]),
+                  builder: (context) => ApplyScreen(
+                    degree: degree,
+                    country: countryName,
+                    subject: subjects[index],
+                  ),
                 ),
               );
             },
