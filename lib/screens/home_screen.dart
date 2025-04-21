@@ -151,42 +151,45 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 const Positioned(
-                  left: 20,
+                  left: 0,
+                  right: 0,
                   bottom: 30,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Welcome to",
-                        style: TextStyle(
-                          fontSize: 26,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              offset: Offset(0, 2),
-                              blurRadius: 4,
-                              color: Colors.black54,
-                            )
-                          ],
+                  child: Center(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "Welcome to",
+                          style: TextStyle(
+                            fontSize: 26,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(0, 2),
+                                blurRadius: 4,
+                                color: Colors.black54,
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                      Text(
-                        "Study Abroad Portal",
-                        style: TextStyle(
-                          fontSize: 26,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold,
-                          shadows: [
-                            Shadow(
-                              offset: Offset(0, 2),
-                              blurRadius: 4,
-                              color: Colors.black54,
-                            )
-                          ],
+                        Text(
+                          "Study Abroad Portal",
+                          style: TextStyle(
+                            fontSize: 26,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            shadows: [
+                              Shadow(
+                                offset: Offset(0, 2),
+                                blurRadius: 4,
+                                color: Colors.black54,
+                              )
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 )
                 ,
