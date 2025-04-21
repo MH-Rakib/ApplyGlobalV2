@@ -153,22 +153,43 @@ class _HomePageState extends State<HomePage> {
                 const Positioned(
                   left: 20,
                   bottom: 30,
-                  child: Text(
-                    "Welcome to Study Abroad Portal",
-                    style: TextStyle(
-                      fontSize: 26,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      shadows: [
-                        Shadow(
-                          offset: Offset(0, 2),
-                          blurRadius: 4,
-                          color: Colors.black54,
-                        )
-                      ],
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Welcome to",
+                        style: TextStyle(
+                          fontSize: 26,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              offset: Offset(0, 2),
+                              blurRadius: 4,
+                              color: Colors.black54,
+                            )
+                          ],
+                        ),
+                      ),
+                      Text(
+                        "Study Abroad Portal",
+                        style: TextStyle(
+                          fontSize: 26,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              offset: Offset(0, 2),
+                              blurRadius: 4,
+                              color: Colors.black54,
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                ),
+                )
+                ,
               ],
             ),
 
